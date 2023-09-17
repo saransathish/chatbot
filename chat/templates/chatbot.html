@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+</head>
+<body>
+    <h1><center>I will answer your queries about Chatbot</center></h1>
+    <h2>Your Quires</h2>
+    <form action="get/" method="post">
+        {% csrf_token %}
+        <input type="text" name="queries" >
+        <input type="submit">
+    </form>
+</body>
+</html>
